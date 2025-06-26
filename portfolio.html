@@ -1,0 +1,272 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <title>Daniel Morales</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body> 
+    <div class="wrapper">
+	    <main>
+	        <header>
+	            <nav> 
+	                <a href="./portfolio.html">Home</a>  
+	                <a href="./academics.html">Academics</a> 
+	                <a href="./work.html">Work Experience</a>  
+					<a href="resume.pdf" target="blank">Resume</a>
+	            </nav>
+	        </header> 
+	
+	        <h1>Daniel Morales</h1> 
+	
+	        <div class='headshot'>
+	            <img alt="Headshot" src="./images/professional_3.jpg" width="500" height="600">
+	        </div>    
+	
+	        <div class="aboutMe">
+	            <h3>About Me</h3> 
+	            <p>Hi, I'm Daniel Morales. I am currently working on my Bachelor's in Computer Science at CUNY Queens College. I'm an IT Support Specialist at JP Solved It LLC and a draftsman at 5Boro Mapping. More details can be found in the Work Experience section. I am very passionate about computer science all aspects genuinely interest me. My favorite part of the field is programming. There's a real sense of pride that comes from creating a complex program that performs as expected, especially when I've struggled through a new technique or idea and implemented it successfully.</p> 
+	        </div>     
+	
+	        <div class="personalInterests">
+	            <h3>Personal Interests</h3> 
+	            <p>While school has taken up most of my life the past few years, I still find time to maintain personal interests:</p> 
+	            <ul> 
+	                <li>Making and painting scale models, mostly Gundam kits</li> 
+	                <li>Weightlifting</li> 
+	                <li>Learning 3D modeling and creating 3D printed objects</li>  
+	            </ul> 
+	        </div>
+	
+	        <div class="dropdownInterests"> 
+	            <!-- Model Kits -->
+	            <div class="dropdown">
+	                <button onclick="toggleDropdown('modelkits')" class="dropbtn">Model Kits</button>
+	                <div id="modelkits" class="dropdown-content">
+	                    <div id="modelkitsCarousel" class="carousel slide" data-bs-ride="carousel">
+	                        <div class="carousel-inner">
+	                            <div class="carousel-item active">
+	                                <img src="./images/gundam_1.jpg" class="d-block w-100" alt="Gundam Model 1">
+	                            </div>
+	                            <div class="carousel-item">
+	                                <img src="./images/gundam_2.jpg" class="d-block w-100" alt="Gundam Model 2">
+	                            </div>
+	                            <div class="carousel-item">
+	                                <img src="./images/gundam_3.jpg" class="d-block w-100" alt="Gundam Model 3">
+	                            </div>
+	                            <div class="carousel-item">
+	                                <img src="./images/gundam_4.jpg" class="d-block w-100" alt="Gundam Model 4">
+	                            </div>
+	                            <div class="carousel-item">
+	                                <img src="./images/gundam_5.jpg" class="d-block w-100" alt="Gundam Model 5">
+	                            </div>
+	                            <div class="carousel-item">
+	                                <img src="./images/gundam_6.jpg" class="d-block w-100" alt="Gundam Model 6">
+	                            </div>
+	                            <div class="carousel-item">
+	                                <img src="./images/gundam_7.jpg" class="d-block w-100" alt="Gundam Model 7">
+	                            </div>
+	                        </div>
+	                        <button class="carousel-control-prev" type="button" data-bs-target="#modelkitsCarousel" data-bs-slide="prev">
+	                            <span class="carousel-control-prev-icon"></span>
+	                        </button>
+	                        <button class="carousel-control-next" type="button" data-bs-target="#modelkitsCarousel" data-bs-slide="next">
+	                            <span class="carousel-control-next-icon"></span>
+	                        </button>
+	                    </div>
+	                </div>
+	            </div>
+	
+	            <!-- Weightlifting -->
+	            <div class="dropdown">
+	                <button onclick="toggleDropdown('weightlifting')" class="dropbtn">Weight Lifting</button>
+	                <div id="weightlifting" class="dropdown-content">
+						<!-- Weightlifting Carousel with Auto Scroll Disabled -->
+						<!-- Weightlifting Carousel with Autoplay Disabled by Default and Manual Slide -->
+						<div class="carousel slide" id="weightliftingCarousel" data-bs-ride="false"> <!-- Disable auto-slide for weightlifting -->
+						    <div class="carousel-inner">
+						        <div class="carousel-item active">
+						            <video class="d-block w-100" controls>
+						                <source src="./images/weightlifting_1.mp4" type="video/mp4">
+						            </video>
+						        </div>
+						        <div class="carousel-item">
+						            <img src="./images/weightlifting_2.jpg" class="d-block w-100" alt="Chris Bumstead">
+						        </div>
+						        <div class="carousel-item">
+						            <img src="./images/weightlifting_3.jpg" class="d-block w-100" alt="Nick Walker">
+						        </div>
+						        <div class="carousel-item">
+						            <img src="./images/weightlifting_4.jpg" class="d-block w-100" alt="Tireflip">
+						        </div>
+						    </div>
+						    <button class="carousel-control-prev" type="button" data-bs-target="#weightliftingCarousel" data-bs-slide="prev">
+						        <span class="carousel-control-prev-icon"></span>
+						    </button>
+						    <button class="carousel-control-next" type="button" data-bs-target="#weightliftingCarousel" data-bs-slide="next">
+						        <span class="carousel-control-next-icon"></span>
+						    </button>
+						</div>
+	                </div>
+	            </div>
+	
+	            <!-- 3D Printing -->
+				    <div class="dropdown">
+				        <button onclick="toggleDropdown('3dprints')" class="dropbtn">3D Printing</button>
+				        <div id="3dprints" class="dropdown-content">
+				            <div id="3dprintsCarousel" class="carousel slide" data-bs-ride="carousel">
+				                <div class="carousel-inner">
+				                    <div class="carousel-item active">
+				                        <img src="./images/3d_1.jpg" class="d-block w-100" alt="Battery Mount Adapter">
+				                    </div>
+				                    <div class="carousel-item">
+				                        <img src="./images/3d_2.jpg" class="d-block w-100" alt="Mounted Battery">
+				                    </div>
+				                    <div class="carousel-item">
+				                        <img src="./images/3d_3.jpg" class="d-block w-100" alt="Apple Watch Strap Holder">
+				                    </div>
+				                    <div class="carousel-item">
+				                        <img src="./images/3d_4.jpg" class="d-block w-100" alt="Organization Containers">
+				                    </div>
+				                    <div class="carousel-item">
+				                        <img src="./images/3d_5.jpg" class="d-block w-100" alt="Amiibo Stands">
+				                    </div>
+				                </div>
+				                <button class="carousel-control-prev" type="button" data-bs-target="#3dprintsCarousel" data-bs-slide="prev">
+				                    <span class="carousel-control-prev-icon"></span>
+				                </button>
+				                <button class="carousel-control-next" type="button" data-bs-target="#3dprintsCarousel" data-bs-slide="next">
+				                    <span class="carousel-control-next-icon"></span>
+				                </button>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+	
+				<script>
+				    // Function to pause and reset all videos
+				    const pauseVideosBeforeNavigate = () => {
+				        document.querySelectorAll('video').forEach(video => {
+				            video.pause();
+				            video.currentTime = 0; // Reset video to the beginning
+				        });
+				    };
+
+				    // Handle the Weightlifting carousel with custom video controls
+				    document.querySelectorAll('.dropbtn').forEach(button => {
+				        button.addEventListener('click', () => {
+				            const dropdownContent = button.nextElementSibling;
+				            const overlay = document.createElement('div');
+				            overlay.classList.add('overlay');  // Create and add the overlay
+				            document.body.appendChild(overlay); // Append it to the body
+				            const isVisible = dropdownContent.style.display === 'block';
+
+				            // Hide all dropdowns first
+				            document.querySelectorAll('.dropdown-content').forEach(content => {
+				                content.style.display = 'none';
+				                content.querySelectorAll('video').forEach(video => {
+				                    video.pause();
+				                    video.currentTime = 0;
+				                });
+				            });
+
+				            // Show the clicked dropdown if it wasn't already visible
+				            if (!isVisible) {
+				                dropdownContent.style.display = 'block';
+
+				                // Check if it's the Weightlifting carousel and apply the custom behavior
+				                const carousel = dropdownContent.querySelector('.carousel');
+				                const video = dropdownContent.querySelector('video');
+				                
+				                if (carousel && video) {
+				                    // Disable auto-slide for the Weightlifting carousel
+				                    carousel.setAttribute('data-bs-ride', 'false'); // Ensure no auto-slide
+
+				                    // Autoplay the video when it's visible
+				                    video.play();
+
+				                    // Move to the next slide only when the video ends
+				                    video.addEventListener('ended', () => {
+				                        // Move to the next carousel item when the video ends
+				                        const nextButton = dropdownContent.querySelector('.carousel-control-next');
+				                        if (nextButton) {
+				                            nextButton.click(); // Trigger the next button to move to the next slide
+				                        }
+				                    });
+
+				                    // Listen for carousel item change (next/prev slide)
+				                    carousel.addEventListener('slid.bs.carousel', () => {
+				                        // Pause and reset the video when the slide changes
+				                        video.pause();
+				                        video.currentTime = 0;
+				                    });
+				                }
+
+				                // Scroll the page to the dropdown content to make sure it's fully visible
+				                dropdownContent.scrollIntoView({
+				                    behavior: 'smooth', // Smooth scroll
+				                    block: 'center' // Scroll the content to the center of the viewport
+				                });
+
+				                // Show the overlay when dropdown is visible
+				                overlay.style.display = 'block';
+
+				                // Close carousel and remove overlay when clicked
+				                overlay.addEventListener('click', () => {
+				                    dropdownContent.style.display = 'none';
+				                    overlay.remove();  // Remove the overlay
+				                    // Stop and reset video when the carousel is closed
+				                    const video = dropdownContent.querySelector('video');
+				                    if (video) {
+				                        video.pause();
+				                        video.currentTime = 0;
+				                    }
+				                });
+				            }
+				        });
+				    });
+
+				    // Adding event listeners to navigation links (specifically for the Home button)
+				    const navLinks = document.querySelectorAll('a');
+				    navLinks.forEach(link => {
+				        link.addEventListener('click', (event) => {
+				            const href = link.getAttribute('href');
+
+				            // Only pause videos if the user is navigating to the Home page (specific behavior for Home)
+				            if (href && href === './index.html') {  // Adjust the href based on your Home URL
+				                // Pause the video before navigating to Home
+				                pauseVideosBeforeNavigate();
+				            }
+				        });
+				    });
+
+				    // Pause videos on page unload (when refreshing or navigating away)
+				    window.addEventListener('beforeunload', () => {
+				        pauseVideosBeforeNavigate();
+				    });
+
+				    // Ensure video is paused before navigating to Home or when on Home page
+				    const homeButton = document.querySelector('a[href="./index.html"]');
+				    if (homeButton) {
+				        homeButton.addEventListener('click', (event) => {
+				            // Pause all videos before navigating to Home
+				            pauseVideosBeforeNavigate();
+				        });
+				    }
+
+				    // Ensure the video is paused when the page is loaded (if the page is Home and videos should be paused)
+				</script>
+
+	
+			<footer> 
+				<h1>Contact Information</h1> 
+				<p>Phone number: (718) 743-8408</p> 
+				<p><a href="mailto:dmorales720@gmail.com">Email: dmorales720@gmail.com</a></p>
+			</footer> 
+	    </main>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body> 
+</html>
